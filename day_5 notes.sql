@@ -26,7 +26,7 @@ select * into namastesql.dbo.returns from returns;
  inner join returns r on o.order_id = r.order_id;
   
 
-  create table employee(
+ create table employee(
     emp_id int,
     emp_name varchar(20),
     dept_id int,
@@ -70,7 +70,7 @@ select * from
 employee
 inner join dept on 1=1
 order by employee.emp_id;
-
+  
 --inner join
 select e.emp_id , e.emp_name , e.dept_id , d.dep_name
 from employee as e
